@@ -29,3 +29,6 @@ pytest_cache/
 # Configurazioni personali / segreti
 .env
 *.sqlite3
+
+# example/ che non serve
+example/
