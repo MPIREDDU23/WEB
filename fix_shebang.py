@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+#!/opt/homebrew/bin/python3
 
 import os
 
-SHEBANG = "#!/usr/bin/env python3"
+SHEBANG = "#!/opt/homebrew/bin/python3"
 
 def add_shebang_to_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:

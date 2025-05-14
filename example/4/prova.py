@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/opt/homebrew/bin/python3
 
 class CUtente:
     def __init__(self, attr_pubb, attr_priv):
