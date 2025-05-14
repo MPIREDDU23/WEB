@@ -1,0 +1,31 @@
+# Bytecode e cache Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Ambienti virtuali
+venv/
+.venv/
+env/
+.env/
+
+# File temporanei
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# File di test / coverage
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+pytest_cache/
+.cache/
+
+# Configurazioni personali / segreti
+.env
+*.sqlite3
