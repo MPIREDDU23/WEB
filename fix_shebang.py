@@ -12,6 +12,19 @@ def add_shebang_to_file(filepath):
     if lines and lines[0].strip() == SHEBANG:
         return
 
+    # controlla se c'è uno shebang diverso, se sì lo rimuove
+    if lines and lines[0].startswith("#!"):
+        # rimuove la prima riga
+        lines = lines[1:]
+
+    # finché il file ha ancora righe e le righe non contengono caratteri != " " rimuovile
+    while lines and lines[0].strip() == "":
+        lines = lines[1:]
+
+    # Se il file è vuoto, non aggiungere lo shebang
+    if not lines:
+        return
+
     # Prepara il nuovo contenuto
     new_lines = [SHEBANG + "\n", "\n"] + lines
 
