@@ -32,3 +32,5 @@ pytest_cache/
 
 # example/ che non serve
 example/
+
+finetune
